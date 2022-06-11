@@ -4,7 +4,7 @@
 # @Author: sgdy3
 # @E-mail: sgdy03@163.com
 # @Time: 2022/3/22
-# Describe: 实现了Siamese网络进行脱机签名认证
+# Describe: 实现了DeepHSV网络进行脱机签名认证
 # ---
 
 
@@ -87,7 +87,7 @@ class TwoC2L():
 
 
     def train(self,dataset,weights='',save=False):
-        save_dir = '../../NetWeights/2C2L_weights'
+        save_dir = './NetWeights/2C2L_weights'
         if not os.path.isdir(save_dir):
             os.makedirs(save_dir)
         if weights:
